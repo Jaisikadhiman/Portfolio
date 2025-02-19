@@ -1,0 +1,69 @@
+/* Heading Style */
+.heading1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    margin: 8% 0 3% 0;
+}
+
+/* Logo Image Styling */
+img.why_logo {
+    width: 70px;
+    height: 70px;
+}
+
+/* Mid Text Styling */
+.mid_text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 4px 10px;
+    color: rgb(250, 241, 241);
+}
+
+
+
+/* Box Style - for individual boxes */
+.box {
+    background-color: #1E2635; /* Dark background for the box */
+    width: 100%; /* Full width within parent */
+    max-width: 260px; /* Maximum width to maintain uniformity */
+    height: 200px;
+    border-radius: 20px;
+    margin: 0 5%;
+    padding-top: 20px; /* Padding for the content inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Background Styling for the Section */
+.why_hire_me_section {
+    background-color: #151925; /* Dark blue background for the entire section */
+    padding: 50px 20px;
+    border-radius: 8px;
+    text-align: center;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+    margin-top: 5%;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .why_hire_me_section {
+        padding: 30px 10px;
+    }
+
+    .neww {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modiv {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,68 @@
+/* Heading style */
+.heading {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+/* About Me left text style */
+.about_me_left {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center; /* Align text to the left */
+    color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    /* margin-top: 10px; */
+    animation: colorChange 3s ease-in-out infinite, scrollAnimation 1s ease-in-out;
+}
+
+/* About Me right image style */
+.my-pic {
+    width: 45%;
+    margin-top: 7%;
+}
+
+/* Keyframes for color changing animation */
+@keyframes colorChange {
+    0% {
+        color: rgba(255, 255, 255, 0.8); /* Starting color */
+    }
+    50% {
+        color: skyblue; /* Midway color change */
+    }
+    100% {
+        color: rgba(255, 255, 255, 0.8); /* Ending color */
+    }
+}
+
+/* Scroll-based animation */
+@keyframes scrollAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start slightly lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End in normal position */
+    }
+}
+
+/* Scroll animation applied when element comes into view */
+.about_me_left.scroll-animate {
+    animation: scrollAnimation 1s ease-in-out forwards;
+}
+
+/* About Me container flex properties */
+.about_me_info {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    flex-direction: row-reverse; /* Adjust to place the image on the left and text on the right */
+}
+
+/* About Me main container style */
+.about_me {
+    margin-top: 10%;
+}
