@@ -11,10 +11,9 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 20px;
-    text-align: center; /* Align text to the left */
+    text-align: center; /* Align text */
     color: rgba(255, 255, 255, 0.8);
     width: 50%;
-    /* margin-top: 10px; */
     animation: colorChange 3s ease-in-out infinite, scrollAnimation 1s ease-in-out;
 }
 
@@ -59,10 +58,53 @@
     display: flex;
     justify-content: center;
     align-items: center; /* Center vertically */
-    flex-direction: row-reverse; /* Adjust to place the image on the left and text on the right */
+    flex-direction: row-reverse; /* Image on the left, text on the right */
 }
 
 /* About Me main container style */
 .about_me {
     margin-top: 10%;
+}
+
+/* ======== Responsive Design ======== */
+
+/* For tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    .about_me_info {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center text */
+        align-items: center; /* Center content */
+    }
+
+    .about_me_left {
+        width: 90%; /* Allow text to take more space */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .my-pic {
+        width: 70%; /* Reduce image size */
+        margin-top: 5%;
+        display: block; /* Ensure it behaves as a block */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+    .about_me_left {
+        font-size: 16px; /* Reduce text size */
+        width: 95%;
+    }
+
+    .my-pic {
+        width: 70%; /* Make image smaller */
+        display: block; /* Ensure block-level */
+        margin-top:  0 20px; /* Center horizontally */
+        /* margin-left: 1px; */
+    }
+
+    .heading {
+        font-size: 28px; /* Reduce heading size */
+    }
 }
