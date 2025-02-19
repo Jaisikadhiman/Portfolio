@@ -127,11 +127,91 @@
     height:100px;
     border-radius: 50px;
   } */
+  
+
+@keyframes typing {
+  /* eveloper */
+  0%, 27.3488% { content: ""; }
+  1.667%, 48.2093% { content: "w"; }
+  3.334%, 46.0698% { content: "we"; }
+  5.001%, 44.9302% { content: "web"; }
+  6.668%, 42.7907% { content: "web "; }
+  8.335%, 40.6512% { content: "web d"; }
+  11.669%, 38.5116% { content: "web de"; }
+  13.336%, 36.3721% { content: "web dev"; }
+  15.003%, 34.2326% { content: "web deve"; }
+  16.670%, 32.0930% { content: "web devel"; }
+  19.3953%, 31.9535% { content: "web develo"; }
+  21.5349%, 29.8140% { content: "web develop"; }
+  23.6744%, 28.6744% { content: "web develope"; }
+  25.8140%, 26.5349% { content: "web developer"; }
+
+  /* mern stack developer */
+  50.4186%, 99.9302% { content: ""; }
+  52.5581%, 98.7907% { content: "m"; }
+  54.6977%, 97.6512% { content: "me"; }
+  56.8372%, 96.5116% { content: "mer"; }
+  58.9767%, 95.3721% { content: "mern"; }
+  60.1163%, 94.2326% { content: "mern "; }
+  62.2558%, 93.0930% { content: "mern s"; }
+  64.3953%, 92.9535% { content: "mern st"; }
+  66.5349%, 91.2345% { content: "mern sta"; }
+  68.6744%, 90.8140% { content: "mern stac"; }
+  70.8140%, 89.4943% { content: "mern stack"; }
+  72.9535%, 88.6744% { content: "mern stack d"; }
+  74.0930%, 86.5349% { content: "mern stack de"; }
+  76.2326%, 84.3953% { content: "mern stack dev"; }
+  78.3721%, 82.2558% { content: "mern stack deve"; }
+  78.5116%, 80.1163% { content: "mern stack devel"; }
+  80.6512%, 78.9767% { content: "mern stack develo"; }
+  82.7907%, 76.8372% { content: "mern stack develop"; }
+  84.9302%, 74.6977% { content: "mern stack develope"; }
+  87.0698%, 72.5581% { content: "mern stack developer"; }
+}
+
+
+
+.typewriter {
+  --caret:#03B0FD;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+img.behind_the_image {
+  height: 450px;
+  width: 300px;
+  border-radius: 10%;
+  object-fit: cover;
+  max-width: 100%; /* Ensures the image scales down on smaller screens */
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 768px) {
   img.behind_the_image {
-    height: 450px;
-    width: 300px; /* Ensure the width is the same as the height for a perfect circle */
-    border-radius: 10%; /* Ensures the image is circular */
-    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+      height: auto; /* Adjust height dynamically */
+      width: 70%; /* Reduce width for smaller screens */
+      max-width: 250px; /* Prevent image from being too large */
+      display: block;
+      margin-top: 60px;
+      margin-left: 50px;
+  }
+  .it_is_me {
+    margin-top: 50px; /* Adjusts margin-top for smaller screens */
+}
+.follow_me {
+  font-size: 20px; /* Reduce font size for better readability on small screens */
+  text-align: center; /* Center text on mobile for better alignment */
+  margin: 30px 0; /* Adjust margin for spacing */
+}
 }
 
   
