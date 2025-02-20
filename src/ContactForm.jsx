@@ -143,7 +143,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
+  faGithub,
   faInstagram,
+  faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { PulseLoader } from "react-spinners"; // Import spinner
@@ -232,12 +234,12 @@ const ContactForm = () => {
           <ul className="social-media-list">
             <li>
               <a
-                href="https://www.instagram.com/?hl=en"
+                href="https://github.com/Jaisikadhiman"
                 target="_blank"
                 className="contact-icon"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={faFacebook} aria-hidden="true" />
+                <FontAwesomeIcon icon={faGithub} aria-hidden="true" />
               </a>
             </li>
             <li>
@@ -252,12 +254,12 @@ const ContactForm = () => {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/?hl=en"
+                href="https://www.linkedin.com/in/jaisika-dhiman"
                 target="_blank"
                 className="contact-icon"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={faTwitter} aria-hidden="true" />
+                <FontAwesomeIcon icon={faLinkedin} aria-hidden="true" />
               </a>
             </li>
           </ul>
