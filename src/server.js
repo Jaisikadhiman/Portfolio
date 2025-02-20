@@ -1,4 +1,3 @@
-require("dotenv").config();
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
@@ -6,12 +5,13 @@ const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(cors()); // Enable CORS
+require("dotenv").config();
 
 // Load environment variables
-// const SMTP_USER = process.env.SMTP_USER;
-// const SMTP_PASS = process.env.SMTP_PASS;
-SMTP_USER="jaisikadhiman446@gmail.com";
-SMTP_PASS="wnlaqirbndnkuref"
+const SMTP_USER = process.env.SMTP_USER;
+const SMTP_PASS = process.env.SMTP_PASS;
+// SMTP_USER="jaisikadhiman446@gmail.com";
+// SMTP_PASS="wnlaqirbndnkuref"
 console.log(process.env.SMTP_USER)
 
 if (!SMTP_USER || !SMTP_PASS) {
