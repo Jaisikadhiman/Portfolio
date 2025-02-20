@@ -76,15 +76,16 @@ const Main = () => {
   Resume
 </button> */}
 
-<button
+<a
   className="buttonb"
-  onClick={() => {
-    window.location.href =
-      "https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk";
-  }}
+  href="https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk"
+  target="_blank"
+  rel="noopener noreferrer"
 >
   Resume
-</button>
+</a>
+
+
 
 
         </div>

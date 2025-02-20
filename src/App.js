@@ -25,10 +25,10 @@ function App() {
     <div>
     {isLoading ? (
         <div className="loading-wave">
-  <div class="loading-bar"></div>
-  <div class="loading-bar"></div>
-  <div class="loading-bar"></div>
-  <div class="loading-bar"></div>
+  <div className="loading-bar"></div>
+  <div className="loading-bar"></div>
+  <div className="loading-bar"></div>
+  <div className="loading-bar"></div>
 
       </div>
     ) :(
