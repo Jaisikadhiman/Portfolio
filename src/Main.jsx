@@ -24,7 +24,7 @@ const Main = () => {
         <h3 className="it_is_me">Hey! It's Me</h3>
         <h2 className="names">Jaisika Dhiman</h2>
         <p className="i_am_a">
-          I am a&nbsp;<span class="typewriter"></span>
+          I am a&nbsp;<span className="typewriter"></span>
         </p>
 
         <div className="flex1">
@@ -50,7 +50,7 @@ const Main = () => {
           <a href="mailto:jaisikadhiman446@gmail.com">
             <button className="buttonc">E-Mail Me</button>
           </a>
-          <button
+          {/* <button
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk",
@@ -60,7 +60,22 @@ const Main = () => {
             className="buttonb"
           >
             Resume
-          </button>
+          </button> */}
+          <button
+  className="buttonb"
+  onClick={() => {
+    const newTab = window.open(
+      "https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk",
+      "_blank"
+    );
+    if (!newTab) {
+      alert("Popup blocked! Please allow popups and try again.");
+    }
+  }}
+>
+  Resume
+</button>
+
         </div>
       </div>
       <div className="right_main ">
