@@ -50,46 +50,14 @@ const Main = () => {
           <a href="mailto:jaisikadhiman446@gmail.com">
             <button className="buttonc">E-Mail Me</button>
           </a>
-          {/* <button
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk",
-                "_blank"
-              )
-            }
-            className="buttonb"
+
+          <a
+            href="https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Resume
-          </button> */}
-          {/* <button
-  className="buttonb"
-  onClick={() => {
-    const newTab = window.open(
-      "https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk",
-      "_blank"
-    );
-    if (!newTab) {
-      alert("Popup blocked! Please allow popups and try again.");
-    }
-  }}
->
-  Resume
-</button> */}
-
-<button
-  className="buttonb"
-  onClick={() => {
-    window.open(
-      "https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk",
-      "_blank"
-    );
-  }}
->
-  Resume
-</button>
-
-
-
+            <button className="buttonb">Resume</button>
+          </a>
         </div>
       </div>
       <div className="right_main ">
