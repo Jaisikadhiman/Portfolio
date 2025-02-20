@@ -61,7 +61,7 @@ const Main = () => {
           >
             Resume
           </button> */}
-          <button
+          {/* <button
   className="buttonb"
   onClick={() => {
     const newTab = window.open(
@@ -74,7 +74,18 @@ const Main = () => {
   }}
 >
   Resume
+</button> */}
+
+<button
+  className="buttonb"
+  onClick={() => {
+    window.location.href =
+      "https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk";
+  }}
+>
+  Resume
 </button>
+
 
         </div>
       </div>
