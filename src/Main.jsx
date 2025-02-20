@@ -76,15 +76,17 @@ const Main = () => {
   Resume
 </button> */}
 
-<a
+<button
   className="buttonb"
-  href="https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk"
-  target="_blank"
-  rel="noopener noreferrer"
+  onClick={() => {
+    window.open(
+      "https://drive.google.com/file/d/1xfmnCtRyyX1j1CwurOtpi2nb_xB4c0Kt/view?usp=drivesdk",
+      "_blank"
+    );
+  }}
 >
   Resume
-</a>
-
+</button>
 
 
 
