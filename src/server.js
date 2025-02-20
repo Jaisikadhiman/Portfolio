@@ -8,8 +8,11 @@ app.use(express.json());
 app.use(cors()); // Enable CORS
 
 // Load environment variables
-const SMTP_USER = process.env.SMTP_USER;
-const SMTP_PASS = process.env.SMTP_PASS;
+// const SMTP_USER = process.env.SMTP_USER;
+// const SMTP_PASS = process.env.SMTP_PASS;
+SMTP_USER="jaisikadhiman446@gmail.com";
+SMTP_PASS="wnlaqirbndnkuref"
+console.log(process.env.SMTP_USER)
 
 if (!SMTP_USER || !SMTP_PASS) {
   console.error("❌ Missing SMTP credentials. Check your .env file.");
